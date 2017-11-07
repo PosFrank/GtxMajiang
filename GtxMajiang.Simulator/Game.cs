@@ -94,19 +94,14 @@ namespace GtxMajiang.Simulator
             //开始轮流摸牌出牌
             while (true)
             {
+                //TODO[tigao]: 检查下家是否可以吃
                 //检查其他3个玩家的手牌是否可以碰
                 if (CheckEachPlayerToPengAndDetermineNextTurn(players, out turn, turn))
                 {
-                    Console.WriteLine($"Game: Player{players[turn].GetName()} PENG! [{_common.GetType()}][{_common.GetType()}][{_common.GetType()}]");
-                }
-                else if (CheckNextPlayerToChiAndDetermineNextTurn(players, out turn, turn))
-                {
-                    //TODO[tigao]: 检查下家是否可以吃
+
                 }
                 else
                 {
-                    turn = (turn + 1) % 4;
-
                     if (!_table.HasNext())
                     {
                         break;
@@ -196,13 +191,6 @@ namespace GtxMajiang.Simulator
             Console.WriteLine($"Game: Player {player.GetName()} show PAI: [{_common.GetType()}] !");
         }
 
-        /// <summary>
-        /// 检查其他3个玩家是否可以碰并且询问是否要碰，如果要碰的话下一个就是碰的这个人
-        /// </summary>
-        /// <param name="players"></param>
-        /// <param name="turn"></param>
-        /// <param name="inputTurn"></param>
-        /// <returns></returns>
         private bool CheckEachPlayerToPengAndDetermineNextTurn(Player[] players, out int turn, int inputTurn)
         {
             for (int i = 1; i <= 3; i++)
@@ -218,21 +206,7 @@ namespace GtxMajiang.Simulator
                 }
             }
 
-            turn = inputTurn;
-
-            return false;
-        }
-
-        /// <summary>
-        /// 检查下一手玩家要不要吃
-        /// </summary>
-        /// <param name="players"></param>
-        /// <param name="turn"></param>
-        /// <param name="inputTurn"></param>
-        /// <returns></returns>
-        private bool CheckNextPlayerToChiAndDetermineNextTurn(Player[] players, out int turn, int inputTurn)
-        {
-            turn = inputTurn;
+            turn = (inputTurn + 1) % 4;
 
             return false;
         }

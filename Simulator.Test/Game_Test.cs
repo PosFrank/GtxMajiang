@@ -1,8 +1,8 @@
 ﻿using System;
-using Simulator;
+using GTX.Majiang.Simulator;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Simulator.Test
+namespace GTX.Majiang.Simulator.Test
 {
     [TestClass]
     public class Game_Test
@@ -10,7 +10,7 @@ namespace Simulator.Test
         [TestMethod]
         public void GamePlayTest()
         {
-            //var game = new Game();
+            var game = new Game();
 
         }
     }

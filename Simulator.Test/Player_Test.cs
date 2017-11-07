@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Simulator.Test
+namespace GTX.Majiang.Simulator.Test
 {
     [TestClass]
     public class Player_Test

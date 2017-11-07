@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulator", "Simulator\Simulator.csproj", "{2828DFE9-7AC3-4275-924B-DD35EF3E5A7A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtxMajiang.Simulator", "Simulator\GtxMajiang.Simulator.csproj", "{2828DFE9-7AC3-4275-924B-DD35EF3E5A7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulator.Test", "Simulator.Test\Simulator.Test.csproj", "{84F6ADED-6B61-41A6-8D76-E8C279A2B149}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtxMajiang.Simulator.Test", "GTX.Majiang.Simulator.Test\GtxMajiang.Simulator.Test.csproj", "{17E646F4-D713-4220-A0BA-ED37F522460C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtxMajiang.Simulator.ConsolePlayer", "GtxMajiang.Simulator.ConsolePlayer\GtxMajiang.Simulator.ConsolePlayer.csproj", "{F233E7B5-4467-4649-9259-C2195C9F19B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,14 @@ Global
 		{2828DFE9-7AC3-4275-924B-DD35EF3E5A7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2828DFE9-7AC3-4275-924B-DD35EF3E5A7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2828DFE9-7AC3-4275-924B-DD35EF3E5A7A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{84F6ADED-6B61-41A6-8D76-E8C279A2B149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84F6ADED-6B61-41A6-8D76-E8C279A2B149}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84F6ADED-6B61-41A6-8D76-E8C279A2B149}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84F6ADED-6B61-41A6-8D76-E8C279A2B149}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17E646F4-D713-4220-A0BA-ED37F522460C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E646F4-D713-4220-A0BA-ED37F522460C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E646F4-D713-4220-A0BA-ED37F522460C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17E646F4-D713-4220-A0BA-ED37F522460C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F233E7B5-4467-4649-9259-C2195C9F19B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F233E7B5-4467-4649-9259-C2195C9F19B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F233E7B5-4467-4649-9259-C2195C9F19B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F233E7B5-4467-4649-9259-C2195C9F19B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
