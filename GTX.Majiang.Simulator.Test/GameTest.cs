@@ -5,10 +5,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace GtxMajiang.Simulator.Test
 {
     [TestClass]
-    public class Game_Test
+    public class GameTest
     {
         [TestMethod]
-        public void GameTest()
+        public void Game_PlayTest()
         {
             var game = new Game();
             game.AddPlayer("GTX");

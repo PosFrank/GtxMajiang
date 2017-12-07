@@ -45,8 +45,7 @@ namespace GtxMajiang.Simulator.Models
             rst.AddRange(_publicPais);
             return rst;
         }
-
-
+        
         /// <summary>
         /// 在屏幕上打印出一个玩家的所有牌
         /// </summary>

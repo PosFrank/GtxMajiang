@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace GtxMajiang.Simulator.Test
 {
     [TestClass]
-    public class Player_Test
+    public class PlayerTest
     {
         [TestMethod]
         public void Player_GetAllPais()
